@@ -1,0 +1,566 @@
+/* Variables */
+/* $color-blue2: #001a8b; $color-blue3: #00115d; $color-blue4: #445cc3; $color-blue5: #011fa7; */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1198px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'Titillium Web', serif;
+  color: black;
+}
+
+.btn {
+  border: 1px solid #351fcd;
+  border-radius: 15px;
+  padding: 5px 25px;
+  margin-bottom: 30px;
+}
+
+section {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+i {
+  color: #351fcd;
+}
+
+h3 {
+  font-size: 36px;
+  color: #FFCF00;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+a {
+  font-size: 15px;
+}
+
+/* <nav class="navigation-splash">
+   <div class="container">
+    <div class="logo-menu">
+        <div class="logo">
+            <h2>Golden</h2>
+        </div>
+        <div class="menu"> */
+/* Navbar */
+.navigation-splash {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  background-image: "images/zadanie-golden_0001s_0003_Background.jpg";
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navigation-splash .logo-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.navigation-splash .logo {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  display: inline-block;
+  max-width: 150px;
+  margin: 35px 0 0 0;
+}
+
+.navigation-splash .logo h2 {
+  display: inline-block;
+  font-family: "Satisfy", cursive;
+  font-size: 26px;
+  margin: 0;
+  color: #F0E900;
+  font: "Exo", serif;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.navigation-splash .menu {
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: 26px;
+  word-spacing: 11px;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.navigation-splash .menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation-splash .menu ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.navigation-splash .menu ul li a {
+  text-decoration: none;
+  font: "Roboto", sans-serif;
+  color: white;
+}
+
+/* splash */
+.splash {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+.splash h3 {
+  margin-top: 100px;
+  font-size: 38px;
+  color: #FFCF00;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  margin: 0 auto;
+}
+
+.splash h3 span {
+  font-weight: 200;
+}
+
+.splash h4 {
+  font-weight: 300;
+  color: #FFCF00;
+  letter-spacing: 1px;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  margin: 20px 0 58px 0;
+}
+
+.splash a {
+  text-decoration: none;
+  color: #FFCF00;
+  border: 1px solid white;
+  margin-bottom: -5px;
+}
+
+.splash ::after {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 115%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #0029dc;
+  opacity: 0.007;
+}
+
+/* About us */
+.about-us {
+  padding: 60px 0;
+}
+
+.about-us h3 {
+  color: #351fcd;
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about-us h3::after {
+  position: absolute;
+  content: '';
+  bottom: -11px;
+  left: 50%;
+  width: 49px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: red;
+}
+
+.about-us p {
+  font-size: 16px;
+  margin: 16px 0 1px 0;
+}
+
+.about-us .quarters {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 60px;
+}
+
+.about-us .quarters .item {
+  -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+  padding: 0 20px 40px 20px;
+  position: relative;
+}
+
+.about-us .quarters .item .fa-quidditch:before {
+  margin-top: 40px;
+  margin-left: -12px;
+  position: absolute;
+}
+
+.about-us .quarters .item .fa-dove:before {
+  margin-top: 40px;
+  margin-left: -12px;
+  position: absolute;
+}
+
+.about-us .quarters .item .fa-truck-monster:before {
+  margin-top: 40px;
+  margin-left: -12px;
+  position: absolute;
+}
+
+.about-us .quarters .item .fa-coffee:before {
+  margin-top: 40px;
+  margin-left: -13px;
+  position: absolute;
+}
+
+.about-us .quarters .item i {
+  font-size: 20px;
+  color: #3f2acf;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  background: #F0E900;
+  border-radius: 50%;
+}
+
+.about-us .quarters .item i:hover {
+  background-color: #FFCF00;
+  color: #351fcd;
+  transform: scale(1.02);
+}
+
+.about-us .quarters .item h4 {
+  position: relative;
+  margin-top: 0;
+}
+
+.about-us a {
+  margin: 60px auto 60px auto;
+  text-align: center;
+  text-decoration: none;
+  color: #351fcd;
+  background: #FFCF00;
+}
+
+/* Photo presentation */
+.photo-presentation-one {
+  background: #fafafa;
+  padding-bottom: 0;
+}
+
+.photo-presentation-one .container .one-photo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photo-presentation-one .container .one-photo .image {
+  -ms-flex: 0 50%;
+      flex: 0 50%;
+}
+
+.photo-presentation-one .container .one-photo .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -9px;
+}
+
+.photo-presentation-one .container .one-photo .description {
+  -ms-flex: 0 50%;
+      flex: 0 50%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.photo-presentation-one .container .one-photo .description p {
+  margin: 0 auto;
+  margin: 30px;
+  font-size: 16px;
+}
+
+.photo-presentation-one .container .one-photo .description a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #351fcd;
+  border: 1px solid white;
+}
+
+.photo-presentation-two {
+  padding-bottom: 0;
+}
+
+.photo-presentation-two .container .one-photo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photo-presentation-two .container .one-photo .description {
+  -ms-flex: 0 50%;
+      flex: 0 50%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.photo-presentation-two .container .one-photo .description p {
+  margin: 0 auto;
+  margin: 30px;
+  font-size: 16px;
+}
+
+.photo-presentation-two .container .one-photo .description a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  background: #FFCF00;
+  border: 1px solid #351fcd;
+}
+
+.photo-presentation-two .container .one-photo .image {
+  -ms-flex: 0 50%;
+      flex: 0 50%;
+}
+
+.photo-presentation-two .container .one-photo .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: -9px;
+}
+
+.about-author {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-image: url(https://media.gettyimages.com/photos/hong-kong-picture-id864691936?k=6&m=864691936&s=612x612&w=0&h=njuP3RdAqIOsADOBrL4Xk4CJ0p4HGSWa04ut1SvbK-U=);
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.about-author .style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  opacity: 0.94;
+  z-index: 2;
+}
+
+.about-author .container {
+  position: relative;
+  z-index: 3;
+}
+
+.about-author .container img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+}
+
+.about-author .container h4 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.about-author .container span {
+  font-weight: 200;
+  margin-top: -67px;
+  top: 225px;
+  margin: 0 auto;
+}
+
+.about-author .container p {
+  color: white;
+  font-size: 15px;
+  margin: 15px;
+  margin-top: 0;
+}
+
+.our-services .container {
+  padding: 60px 0;
+}
+
+.our-services .container .section-title {
+  color: #351fcd;
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.our-services .container .section-title::after {
+  position: absolute;
+  content: '';
+  bottom: -11px;
+  left: 50%;
+  width: 49px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: red;
+}
+
+.our-services .container p {
+  font-size: 16px;
+  margin: 16px 0 1px 0;
+}
+
+.our-services .container .services .one-service .left-circle .description h3 {
+  color: #351fcd;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .navigation-splash {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: auto;
+  }
+  .navigation-splash .container {
+    padding: 0 30px;
+  }
+  .navigation-splash .container .logo-menu {
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navigation-splash .container .logo-menu .logo {
+    margin: -135px 0 0 0;
+  }
+  .navigation-splash .container .logo-menu .menu {
+    margin-top: 0;
+    margin-right: -30px;
+  }
+  .navigation-splash .container .logo-menu .menu ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: right;
+    margin: 30px;
+  }
+  .splash {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 120px;
+    text-align: center;
+  }
+  .splash h3 {
+    line-height: 45px;
+  }
+  .splash h4 {
+    margin: 40px 0 58px 0;
+  }
+  .about-us .quarters .item {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    padding: 0 15px 40px 15px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .photo-presentation-one .container .one-photo .image {
+    -ms-flex: 0 100%;
+        flex: 0 100%;
+    padding: 0 30px;
+  }
+  .photo-presentation-one .container .one-photo .description {
+    -ms-flex: 0 100%;
+        flex: 0 100%;
+    padding: 0 0 40px 0;
+  }
+  .photo-presentation-one .container .one-photo .description h4 {
+    margin: 18px 0 10px 0;
+  }
+  .photo-presentation-one .container .one-photo .description p {
+    margin-top: 10px;
+  }
+  .photo-presentation-two .container .one-photo {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .photo-presentation-two .container .one-photo .image {
+    -ms-flex: 0 100%;
+        flex: 0 100%;
+    padding: 0 30px;
+  }
+  .photo-presentation-two .container .one-photo .description {
+    -ms-flex: 0 100%;
+        flex: 0 100%;
+    padding: 0 0 40px 0;
+  }
+  .photo-presentation-two .container .one-photo .description h4 {
+    margin: 18px 0 10px 0;
+  }
+  .photo-presentation-two .container .one-photo .description p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 375px) {
+  .about-us .quarters .item {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+  }
+  .about-us .quarters .item P {
+    margin-bottom: 20px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 320px) {
+  .container {
+    padding: 0;
+  }
+  .about-us .quarters .item {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+  }
+  .about-us .quarters .item P {
+    margin-bottom: 20px;
+    margin-top: -15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
