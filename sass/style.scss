@@ -4,7 +4,6 @@ $font-logo: 'Satisfy', cursive;
 $font-menu: 'Roboto', sans-serif;
 $font-splash-1: 'Noto Serif', serif;
 $font-splash-2: 'Poppins', sans-serif;
-
 $color-navigation: rgb(255, 255, 255);
 
 /* Global */
@@ -22,13 +21,14 @@ body {
     margin: 0;
     font-size: 18px;
     line-height: 1.7;
-    font-family: $font-splash;
+    font-family: $font-splash-1;
 }
 .btn {
-    border-radius: 15px;
-    padding: 5px 25px;
+    border-radius: 5px;
+    padding: 20px 45px;
     margin-bottom: 30px;
-    color: yellow;
+    color: white;
+    font-family: $font-splash-2;
 }
 section {
     padding-bottom: 60px;
@@ -42,6 +42,11 @@ h3 {
     color: black;
     word-spacing: 5px;
     letter-spacing: 1px;
+    font-family: $font-splash-2;
+}
+p {
+    font-size: 14px;
+    font-family: $font-splash-1;
 }
 a {
     font-size: 15px;
@@ -54,7 +59,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    background-image: "images/zadanie-golden_0001s_0003_Background.jpg";
+    background-image: url("images/zadanie-golden_0001s_0003_Background.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -74,7 +79,7 @@ a {
             font-family: $font-logo;
             font-size: 26px;
             margin: 0;
-            color: yellow;
+            color: #fad346;
             text-shadow: 0.1em 0.1em 0.1em black;
         }
     }
@@ -93,7 +98,7 @@ a {
                 margin: 0 5px;
                 a {
                     text-decoration: none;
-                    font-family: $font-menu;
+                    font-family: $font-splash-2;
                     color: $color-navigation;
                 }
             }
@@ -113,7 +118,7 @@ a {
     margin-bottom: -50px;
     h3 {
         margin-top: 100px;
-        font-size: 36px;
+        font-size: 32px;
         color: $color-navigation;
         text-shadow: 0.1em 0.1em 0.1em black;
         margin: 0 auto;
@@ -121,7 +126,7 @@ a {
     }
     h4 {
         font-weight: 300;
-        font-size: 45px;
+        font-size: 60px;
         color: $color-navigation;
         letter-spacing: 1px;
         text-shadow: 0.1em 0.1em 0.1em black;
@@ -130,7 +135,33 @@ a {
     }
     a {
         text-decoration: none;
-        border: 1px solid white;
         margin-bottom: -5px;
+        background: #fad346;
+        font-size: 12px;
     }
 }
+
+/* Services */
+
+.services .container .row {
+    padding: 60px 0;
+    h3 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
+/*
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-title">SERVICES</h3>
+                <p>Proin iaculis purus consequat sem cure.</p>
+            </div>
+
+            <div class="col-xs-4 col-lg-12">
+                <h4>E-commerce</h4>
+*/
