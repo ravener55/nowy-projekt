@@ -5,18 +5,6 @@ $font-menu: 'Roboto', sans-serif;
 $color-navigation: rgb(255, 255, 255);
 $font-splash: 'Poppins', sans-seri
 
-
-/*
-$font-text: 'Titillium Web', serif;
-$color-light: #FFCF00;
-$color-light-hover: #F0E900;
-$color-main: #351fcd;
-$color-background-yellow: #f4f4e6;
-$color-light-bright: #ffd10db5;
-$color-blue1: #0029dc;
-$color-light-beckground: #fafafa;
-$color-blue2: #001a8b; $color-blue3: #00115d; $color-blue4: #445cc3; $color-blue5: #011fa7; */
-
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -34,7 +22,7 @@ body {
     font-family: 'Poppins', sans-seri
 }
 .btn {
-    border: 1px solid $color-main;
+    border: 1px solid $color-navigation;
     border-radius: 15px;
     padding: 5px 25px;
     margin-bottom: 30px;
@@ -57,6 +45,7 @@ a {
 }
 
 /* Navbar */
+
 .navigation-splash {
     position: relative;
     display: flex;
@@ -154,6 +143,7 @@ a {
 }
 
 /* About us */
+
 .about-us {
     padding: 60px 0;
     h3 {
@@ -234,6 +224,7 @@ a {
     }
 }
 /* Photo presentation */
+
 .photo-presentation-one {
     background: $color-light-beckground;
     padding-bottom: 0;
@@ -389,6 +380,7 @@ a {
 }
 
 /* Media query */
+
 @media (max-width: 768px) {
     .navigation-splash {
         display: flex;
