@@ -25,21 +25,22 @@ body {
 }
 .btn {
     border-radius: 5px;
-    padding: 20px 45px;
+    padding: 15px 30px;
     margin-bottom: 30px;
     color: white;
     font-family: $font-splash-2;
 }
 section {
     padding-bottom: 60px;
+    padding-top: 60px;
     text-align: center;
 }
 i {
-    color: black;
+    color: #ff0000;
 }
 h3 {
     font-size: 36px;
-    color: black;
+    color: #1b1b00;
     word-spacing: 5px;
     letter-spacing: 1px;
     font-family: $font-splash-2;
@@ -59,10 +60,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    background-image: url("images/zadanie-golden_0001s_0003_Background.jpg");
+    background-image: url("/images/zadanie-golden_0001s_0003_Background-2.jpg");
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     .logo-menu {
         display: flex;
         justify-content: space-between;
@@ -79,7 +79,7 @@ a {
             font-family: $font-logo;
             font-size: 26px;
             margin: 0;
-            color: #fad346;
+            color: #ffc800;
             text-shadow: 0.1em 0.1em 0.1em black;
         }
     }
@@ -110,14 +110,14 @@ a {
 
 .splash {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     margin-bottom: -50px;
     h3 {
-        margin-top: 100px;
+        margin-top: 300px;
         font-size: 32px;
         color: $color-navigation;
         text-shadow: 0.1em 0.1em 0.1em black;
@@ -136,32 +136,128 @@ a {
     a {
         text-decoration: none;
         margin-bottom: -5px;
-        background: #fad346;
-        font-size: 12px;
+        background: #e2b926;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 600;
     }
 }
 
 /* Services */
 
-.services .container .row {
-    padding: 60px 0;
+.services {
+    padding-top: 60px;
+    padding-bottom: 120px;
     h3 {
         margin-bottom: 0;
     }
     p {
         margin-top: 0;
     }
+    .col-md-4 {
+        padding-top: 70px;
+        i {
+            font-size: 45px;
+            color:  #ffd129c4;
+            border: 4px solid #ffd129;
+            background: transparent;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            padding: 17px 0px 0px 2px
+        }
+    }
 }
 
-/*
-<section class="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3 class="section-title">SERVICES</h3>
-                <p>Proin iaculis purus consequat sem cure.</p>
-            </div>
+/*Our potrfoilio*/
+.our-portfolio {
+    background-color: #e7e7e7;
+    padding-bottom: 100px;
+    .container {
+        .row {
+            .col-12 {
+                h3 {
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-top: 0;
+                    padding-bottom: 30px;
+                }
+                .col-md-4 {
+                    margin-left: -2px;
+                    margin-right: -2px;
+                    margin-top: 30px;
+                    display: inline-block;
+                    img {
+                        width: 100%;
+                        height: 335px;
+                        object-fit: cover;
+                    }
+                    .bottom {
+                        background-color: #ffffff;
+                        h4 {
+                            margin-top: -9px;
+                            padding-top: 16px;
+                            margin-bottom: -6px;
+                        }
+                        p {
+                            font-size: 12px;
+                            padding-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-            <div class="col-xs-4 col-lg-12">
-                <h4>E-commerce</h4>
-*/
+/* Footer */
+footer {
+    position: relative;
+    .col-3 {
+        p {
+            font-size: 12px;
+            margin-top: 66px;
+        }
+    }
+    .col-9 {
+        .icons {
+            margin: 50px 0;
+            ul {
+                li {
+                    list-style-type: none;
+                    font-size: 0px;
+                    display: inline;
+                    a {
+                        text-decoration: none;
+                        font-size: 0px;
+                        margin: 0 10px;
+                        i {
+                            font-size: 30px;
+                            background:  #1b1b00;
+                            border-radius: 50%;
+                            color: white;
+                            width: 50px;
+                            height: 50px;
+                            padding: 12px;
+                            line-height: 0.88;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*
+<footer class="container">
+    <div class="row">
+        <div class="col-3">
+            <p>&copy Copyright 2021 FreebiesXpress.com</p>
+        <div class="col-9">
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f scaled"></i>Facebook</a></li> */
