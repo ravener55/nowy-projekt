@@ -79,15 +79,13 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   display: inline-block;
-  max-width: 150px;
-  margin: 35px 0 0 150px;
+  margin: 15px 0 0 70px;
 }
 
 .navigation-splash .logo h2 {
   display: inline-block;
   font-family: "Satisfy", cursive;
   font-size: 26px;
-  margin: 0;
   color: #ffc800;
   text-shadow: 0.1em 0.1em 0.1em black;
 }
@@ -95,9 +93,9 @@ a {
 .navigation-splash .menu {
   display: inline-block;
   letter-spacing: 1px;
-  margin-top: 26px;
   word-spacing: 11px;
   text-shadow: 0.1em 0.1em 0.1em black;
+  margin-top: 26px;
   margin-right: 70px;
 }
 
@@ -119,17 +117,12 @@ a {
 
 /* splash */
 .splash {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   width: 100%;
-  margin-bottom: -50px;
+  text-align: center;
 }
 
 .splash h3 {
-  margin-top: 300px;
+  margin-top: 120px;
   font-size: 32px;
   color: white;
   text-shadow: 0.1em 0.1em 0.1em black;
@@ -191,90 +184,228 @@ a {
   padding-bottom: 100px;
 }
 
-.our-portfolio .container .row .col-12 h3 {
+.our-portfolio .col-12 h3 {
   margin-bottom: 0;
 }
 
-.our-portfolio .container .row .col-12 p {
+.our-portfolio .col-12 p {
   margin-top: 0;
   padding-bottom: 30px;
 }
 
-.our-portfolio .container .row .col-12 .col-md-4 {
+.our-portfolio .col-12 .col-md-4 {
   margin-left: -2px;
   margin-right: -2px;
   margin-top: 30px;
   display: inline-block;
 }
 
-.our-portfolio .container .row .col-12 .col-md-4 img {
+.our-portfolio .col-12 .col-md-4 img {
   width: 100%;
   height: 335px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.our-portfolio .container .row .col-12 .col-md-4 .bottom {
+.our-portfolio .col-12 .col-md-4 .bottom {
   background-color: #ffffff;
 }
 
-.our-portfolio .container .row .col-12 .col-md-4 .bottom h4 {
+.our-portfolio .col-12 .col-md-4 .bottom h4 {
   margin-top: -9px;
   padding-top: 16px;
   margin-bottom: -6px;
 }
 
-.our-portfolio .container .row .col-12 .col-md-4 .bottom p {
+.our-portfolio .col-12 .col-md-4 .bottom p {
   font-size: 12px;
   padding-bottom: 24px;
 }
 
 /* Footer */
-footer {
-  position: relative;
+footer .col-5 {
+  margin-top: 0;
 }
 
-footer .col-3 p {
+footer .col-5 p {
   font-size: 12px;
-  margin-top: 66px;
+  margin-top: 62px;
+  padding: 0 40px 0 0;
 }
 
-footer .col-9 .icons {
+footer .col-7 {
+  margin-left: 0;
+  padding: 0;
+}
+
+footer .col-7 .icons {
   margin: 50px 0;
 }
 
-footer .col-9 .icons ul li {
+footer .col-7 .icons ul {
+  padding-left: 0;
+  transform: translate(-4%, 0%);
+}
+
+footer .col-7 .icons ul li {
   list-style-type: none;
   font-size: 0px;
   display: inline;
 }
 
-footer .col-9 .icons ul li a {
+footer .col-7 .icons ul li a {
   text-decoration: none;
   font-size: 0px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
-footer .col-9 .icons ul li a i {
-  font-size: 30px;
+footer .col-7 .icons ul li a i {
+  font-size: 32px;
   background: #1b1b00;
   border-radius: 50%;
   color: white;
-  width: 50px;
-  height: 50px;
-  padding: 12px;
-  line-height: 0.88;
+  width: 44px;
+  height: 44px;
+  padding: 8px 0px;
+  line-height: 0.87;
   text-align: center;
-  vertical-align: middle;
 }
 
-/*
-<footer class="container">
-    <div class="row">
-        <div class="col-3">
-            <p>&copy Copyright 2021 FreebiesXpress.com</p>
-        <div class="col-9">
-        <div class="icons">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f scaled"></i>Facebook</a></li> */
+/* Media Query */
+@media (max-width: 1200px) {
+  .navigation-splash .logo-menu .logo {
+    margin: 26px 0 0 60px;
+  }
+  .navigation-splash .logo-menu .menu {
+    margin-right: 60px;
+  }
+  footer .col-5 {
+    margin-top: 7px;
+  }
+  footer .col-7 .icons ul {
+    transform: translate(3%, 0%);
+    padding-left: -15px;
+  }
+  footer .col-7 .icons ul li a i {
+    transform: translate(-118%, 0%);
+  }
+}
+
+@media (max-width: 920px) {
+  .navigation-splash .container {
+    padding: 0 50px;
+  }
+  .navigation-splash .container .logo-menu .logo {
+    margin-left: 50px;
+  }
+  .navigation-splash .container .logo-menu .menu {
+    margin-right: 50px;
+  }
+  footer .col-5 {
+    min-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .col-5 p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+  footer .col-7 {
+    min-width: 100%;
+    text-align: center;
+  }
+  footer .col-7 .icons {
+    margin: 30px 0;
+  }
+  footer .col-7 .icons ul {
+    margin-top: 0;
+  }
+  footer .col-7 .icons ul li a i {
+    transform: translate(-43%, 14%);
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-splash .logo-menu .logo {
+    margin-left: 40px;
+  }
+  .navigation-splash .logo-menu .menu {
+    margin-right: 40px;
+  }
+  .navigation-splash .logo-menu .menu li {
+    display: block;
+  }
+  .splash h3 {
+    font-size: 32px;
+    margin-top: 200px;
+    line-height: 1;
+  }
+  .splash h4 {
+    font-size: 54px;
+    line-height: 1;
+    margin-bottom: 130px;
+  }
+  .our-portfolio .container {
+    padding: 0 30px;
+  }
+  footer {
+    padding: 0 30px;
+  }
+  footer .col-7 {
+    padding-left: 84px;
+  }
+  footer .col-7 .icons ul li a i {
+    transform: translate(-120%, 0%);
+  }
+}
+
+@media (max-width: 520px) {
+  .navigation-splash .container {
+    padding: 0 30px;
+  }
+  .navigation-splash .container .logo-menu {
+    margin-top: 15px;
+  }
+  .navigation-splash .container .logo-menu .logo {
+    margin-top: 22px;
+    margin-left: 24px;
+  }
+  .navigation-splash .container .logo-menu .menu {
+    margin-right: 24px;
+  }
+  .splash h3 {
+    margin-top: 220px;
+  }
+  .splash h4 {
+    margin-top: 30px;
+  }
+  .services .container {
+    padding: 0 30px;
+  }
+  footer .container {
+    padding: 0;
+  }
+  footer .container .col-5 {
+    margin: 0;
+    padding: 0;
+    min-width: 99% p;
+    min-width-font-size: 11px;
+    min-width-padding-right: 0;
+  }
+  footer .container .col-7 {
+    min-width: 100%;
+    padding-left: 93;
+  }
+  footer .container .col-7 .icons {
+    margin: 0;
+    padding: 0;
+  }
+  footer .container .col-7 .icons ul li {
+    margin: 10px -2px;
+  }
+  footer .container .col-7 .icons ul li a i {
+    transform: translate(-131%, 0%);
+  }
+}
 /*# sourceMappingURL=style.css.map */
