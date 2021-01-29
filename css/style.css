@@ -27,13 +27,9 @@ body {
 }
 
 section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 70px;
+  padding-top: 70px;
   text-align: center;
-}
-
-i {
-  color: #ff0000;
 }
 
 h3 {
@@ -151,16 +147,12 @@ a {
 }
 
 /* Services */
-.services {
-  padding-bottom: 80px;
-}
-
 .services h3 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .services p {
-  margin-top: 0;
+  margin: 0;
 }
 
 .services .services-wrapper {
@@ -169,7 +161,7 @@ a {
 
 .services .services-wrapper i {
   font-size: 45px;
-  color: #ffd129c4;
+  color: #ffd12bbd;
   border: 4px solid #ffd129;
   background: transparent;
   width: 90px;
@@ -184,7 +176,7 @@ a {
 }
 
 .our-portfolio .title-wrapper h3 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .our-portfolio .title-wrapper p {
@@ -211,20 +203,20 @@ a {
 }
 
 .our-portfolio .image-wrapper .bottom h4 {
-  margin-top: -9px;
+  margin: -9px 0 -6px 0;
   padding-top: 16px;
-  margin-bottom: -6px;
 }
 
 .our-portfolio .image-wrapper .bottom p {
   font-size: 12px;
   padding-bottom: 30px;
+  margin-bottom: 0;
 }
 
 /* Footer */
 footer.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 footer.container .footer-row {
@@ -233,18 +225,16 @@ footer.container .footer-row {
 }
 
 footer.container .footer-row .copy-wrapper {
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 0;
+  padding: 0;
 }
 
 footer.container .footer-row .copy-wrapper p {
   font-size: 12px;
-  margin: 0 0 0 12px;
+  margin: 0 0 0 14px;
 }
 
 footer.container .footer-row .icons-wrapper {
-  padding-left: 0;
+  padding: 0;
 }
 
 footer.container .footer-row .icons-wrapper .icons {
@@ -253,25 +243,23 @@ footer.container .footer-row .icons-wrapper .icons {
 
 footer.container .footer-row .icons-wrapper .icons ul {
   margin: 0;
-  left: 50%;
   transform: translateX(-50%);
   padding-left: 0;
 }
 
 footer.container .footer-row .icons-wrapper .icons ul li {
   list-style-type: none;
-  font-size: 0px;
   display: inline;
 }
 
 footer.container .footer-row .icons-wrapper .icons ul li a {
   text-decoration: none;
-  font-size: 0px;
+  font-size: 0;
   margin: 0 5px;
 }
 
 footer.container .footer-row .icons-wrapper .icons ul li a i {
-  font-size: 29px;
+  font-size: 25px;
   background: #1b1b00;
   border-radius: 50%;
   color: white;
@@ -296,17 +284,24 @@ footer.container .footer-row .icons-wrapper .icons ul li a i {
     line-height: 1;
   }
   .services {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .icons-wrapper {
-    padding-right: 0;
+  .our-portfolio .container {
+    padding: 0 50px;
+  }
+  footer.container {
+    padding: 40px 50px;
   }
 }
 
 @media (max-width: 920px) {
   footer.container .footer-row .copy-wrapper p {
     font-size: 11px;
+  }
+  .icons-wrapper li {
+    margin-right: -3px;
+    margin-bottom: -3px;
   }
 }
 
@@ -341,25 +336,22 @@ footer.container .footer-row .icons-wrapper .icons ul li a i {
     padding-right: 30px;
   }
   footer.container {
-    padding-left: 60px;
+    padding: 40px 50px;
   }
   footer.container .footer-row {
     -ms-flex-align: center;
         align-items: center;
   }
   footer.container .footer-row .copy-wrapper p {
-    margin: 0 0 0 12px;
+    margin: 0 0 0 14px;
     max-width: 90px;
   }
   footer.container .footer-row .icons-wrapper {
     padding: 0;
+    margin-bottom: -13px;
   }
   footer.container .footer-row .icons-wrapper .icons {
     display: inline-block;
-  }
-  footer.container .footer-row .icons-wrapper .icons ul li {
-    margin-right: -2px;
-    margin-bottom: -2px;
   }
 }
 
@@ -374,13 +366,17 @@ footer.container .footer-row .icons-wrapper .icons ul li a i {
   .navigation-splash .container .logo-menu .menu {
     margin-right: 24px;
   }
-  .services.container {
+  .services .container {
     padding: 0 30px;
   }
-  .our-portfolio .image-wrapper {
-    padding: 0;
+  .services .container .services-wrapper {
+    padding: 60px 0 0;
+  }
+  .our-portfolio .container {
+    padding: 0 30px;
   }
   footer.container {
+    padding: 30px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
